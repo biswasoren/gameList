@@ -1,5 +1,7 @@
 
-# Go To my-app and run 
+### Open Directory where index.js and package.json are present and run 
+
+### `yarn install`
 
 ### `yarn start`
 

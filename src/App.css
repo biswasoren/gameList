@@ -1,0 +1,205 @@
+.App {
+  height: 100vh;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Nav {
+  width: 168px;
+  background: #FFA3A3;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+}
+
+.main {
+  width: 100%;
+  overflow: overlay;
+}
+
+.panel {
+  height: 60px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));;
+  grid-gap: 40px;
+  padding: 30px 40px 0; 
+}
+
+.card {
+  min-height: 200px;
+  background: rgba(255, 125, 125, 0.63);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  transform: rotate(-3deg);
+}
+
+.heading {
+  padding-top: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #283103;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px solid #FFD3D3;
+}
+
+.group-head:first-child {
+  margin: 80px 30px 30px;
+  border-bottom: 1px solid #C4C4C4;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #283103;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  background: #725A5A;
+  border: 1px solid #FFD233;
+  border-radius: 12px;
+  margin: 10px;
+  min-height: 90px;
+}
+
+.text {
+  color: #6FFF57;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+}
+
+.text span {
+  -webkit-text-stroke: 1px solid #000000;
+}
+
+.label {
+  background: rgba(248, 33, 33, 0.42);
+  width: 43px;
+  margin: 0 10px;
+}
+
+.choice {
+  transform: rotate(-90deg);
+  /* display: flex; */
+  -webkit-text-stroke: 1px solid #6FFF57;
+  position: relative;
+  width: 158px;
+  top: 78px;
+  left: -56px;
+}
+
+.page {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0;
+}
+
+.button {
+  background: rgba(255, 125, 125, 0.63);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  transform: rotate(-3deg);
+  height: 30px;
+  width: 30px;
+  opacity: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-container {
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.side-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menu {
+  border-bottom: 1px solid #000000;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(64, 44, 44, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Header {
+  background-color: #282c34;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Container {
+  display: flex;
+  height: calc(100% - 60px);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input {
+  background: rgba(255, 125, 125, 0.63);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 125, 125, 0.3);
+}
