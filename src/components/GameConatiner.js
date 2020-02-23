@@ -110,14 +110,14 @@ class GameConatiner extends React.Component {
 
     handleSearch = e => {
         const value = e.target.value;
-        const totalData = this.state.totalData;
-        let groupedData = this.state.groupedData;
+        const totalData = _.cloneDeep(this.state.totalData);
+        let groupedData = _.cloneDeep(this.state.groupedData);
         const data = totalData.filter(o => o.title && o.title.toLowerCase().includes(value));
         if (groupedData && this.props.filter.group_by) {
             groupedData = _.groupBy(data, this.props.filter.group_by)
         }
         const total = data.length / 6;
-        let page = data.splice(1,6);
+        let page = data.splice(0,6);
         
         this.setState({gameData: page.length ? page : [], activePage: 1, totalPages: Math.ceil(total), groupedData})
     }
