@@ -1,5 +1,7 @@
 
-# Go To my-app and run 
+## Run 
+
+### `yarn install`
 
 ### `yarn start`
 
@@ -12,3 +14,5 @@
 
 
 NOTE: Enable CORS from browser
+
+@auther: Biswa Soren
